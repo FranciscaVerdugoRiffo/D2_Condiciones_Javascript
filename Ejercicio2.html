@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <h1>Ejercicio 2 </h1>
+    <section>
+        <div>
+            <article>
+                <img src="./assets/img/Lentes.PNG" alt="Lentes montaña">
+                <input Id="lentes-montaña" type="text">
+            </article>
+            <article>
+                <img src="./assets/img/linterna.PNG" alt="linterna frontal">
+                <input Id="linterna-montaña" type="text">
+            </article>
+            <article>
+                <img src="./assets/img/Zapato.PNG" alt="zapatos de montaña nieve">
+                <input Id="zapatos-montaña" type="text">
+            </article>
+        </div>
+        <p id="sumatoria-implementos"></p>
+        <button onclick="
+        lentes = Number(document.querySelector('#lentes-montaña').value)
+        linterna = Number(document.querySelector('#linterna-montaña').value)
+        zapatos = Number(document.querySelector('#zapatos-montaña').value)
+
+        cantidadImplementos = lentes + linterna + zapatos
+
+        totalImplementos = document.querySelector('#sumatoria-implementos')
+
+        if(cantidadImplementos <=10){
+            totalImplementos.innerText = 'Estas Llevando ' + cantidadImplementos + ' Implementos'
+        } else{
+            totalImplementos.innerText = 'Estas llevando demasiados implementos'
+        }
+        ">Verificar</button>
+    </section>
+
+    <script src="./assets/js/js.js"></script>
+</body>
+</html>

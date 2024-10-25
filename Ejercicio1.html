@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <h1>Hacerle Click a la Imagen</h1>
+    <img src="./assets/img/torresdelpaine.jpg" alt="" onclick="
+        elemento = document.querySelector('img')
+            if (elemento.style.border) {
+                elemento.style.border = '';  
+            } else {
+                elemento.style.border = '2px solid red';  
+            }
+    ">
+    <script src="./assets/js/js.js"></script>
+</body>
+</html>

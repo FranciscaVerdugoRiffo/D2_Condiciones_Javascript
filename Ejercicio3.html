@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <h1>Ejercicio 3</h1>
+    <div>
+        <label for="digit1">Digito 1</label>
+            <select  id="digit1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+    </div>
+    <div>
+        <label for="digit2">Digito 2</label>
+            <select id="digit2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+    </div>
+    <div>
+        <label for="digit3">Digito 3</label>
+            <select id="digit3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+    </div>
+
+    <p id="password-message"></p>
+    
+    <button onclick="
+        let digit1 = document.querySelector('#digit1').value;
+        let digit2 = document.querySelector('#digit2').value;
+        let digit3 = document.querySelector('#digit3').value;
+        
+        let password = digit1 + digit2 + digit3;
+        
+        let message = document.querySelector('#password-message');
+        
+        if (password  === '911') {
+            message.innerText = 'Password 1 correcto';
+        } else if (password ==='714') {
+            message.innerText = 'Password 2 correcto';
+        } else {
+            message.innerText = 'Password incorrecto';
+        }
+
+        ">Ingresar</button>
+
+    <script src="./assets/js/js.js"></script>    
+</body>
+</html>
